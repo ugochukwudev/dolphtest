@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#008E97] w-full py-4 px-20 dark:text-white">
+    <div className="bg-[#008E97] w-full py-4 px-4 lg:px-20 dark:text-white">
       <div className="flex w-full justify-between">
         <Image
           src="/logo.png"
