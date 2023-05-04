@@ -3,19 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { BsToggleOff, BsToggleOn } from "react-icons/bs";
+import Logo from "./Logo";
 const Navigation = () => {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className="flex justify-between items-center px-4 lg:px-20 py-6 lg:py-10">
-      <div>
+      <div className="">
         <Link href="/">
-          <Image
-            src="/logo.png"
-            width={50}
-            height={50}
-            className="h-[50px] w-[150px]"
-            alt="oops"
-          />
+          <Logo />
         </Link>
       </div>
       <ul className="flex gap-6 text-black items-center justify-center dark:text-white font-semibold cursor-pointer">
