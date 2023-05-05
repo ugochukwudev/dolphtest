@@ -10,7 +10,7 @@ const Navigation = () => {
     <div className="flex justify-between items-center px-4 lg:px-20 py-6 lg:py-10">
       <div className="">
         <Link href="/">
-          <Logo />
+          <Logo status={darkMode} />
         </Link>
       </div>
       <ul className="flex gap-6 text-black items-center justify-center dark:text-white font-semibold cursor-pointer">
@@ -23,8 +23,16 @@ const Navigation = () => {
             onClick={() => {
               console.log("clicked");
               setDarkMode((prev) => !prev);
-              if (window !== undefined) {
-                console.log("oops");
+              if (typeof window !== "undefined") {
+                if (localStorage.getItem("mode") === "dark") {
+                  console.log("dark");
+
+                  localStorage.setItem("mode", "light");
+                } else {
+                  console.log("light");
+
+                  localStorage.setItem("mode", "dark");
+                }
 
                 document?.querySelector("html")?.classList.toggle("dark");
               }
@@ -37,8 +45,16 @@ const Navigation = () => {
             onClick={() => {
               console.log("clicked");
               setDarkMode((prev) => !prev);
-              if (window !== undefined) {
-                console.log("oops");
+              if (typeof window !== "undefined") {
+                if (localStorage.getItem("mode") === "dark") {
+                  console.log("dark");
+
+                  localStorage.setItem("mode", "light");
+                } else {
+                  console.log("light");
+
+                  localStorage.setItem("mode", "dark");
+                }
 
                 document?.querySelector("html")?.classList.toggle("dark");
               }

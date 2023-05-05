@@ -13,14 +13,16 @@ const Footer = () => {
           className=""
           alt="logo"
         />
-        <div className="flex gap-6 justify-center items-center">
+        <div className="flex gap-6 text-white justify-center items-center">
           <Link href="/about">About</Link>
           <a href="https://github.com/" rel="no-refferer">
             Github
           </a>
         </div>
       </div>
-      <p className="text-center ">© Copyright {new Date().getFullYear()}</p>
+      <p className="text-center text-white">
+        © Copyright {new Date().getFullYear()}
+      </p>
     </div>
   );
 };
