@@ -13,7 +13,7 @@ const Navigation = () => {
           <Logo status={darkMode} />
         </Link>
       </div>
-      <ul className="flex gap-6 text-black items-center justify-center dark:text-white font-semibold cursor-pointer">
+      <ul className="flex gap-6 mt-2 lg:mt-0 text-black items-center justify-center dark:text-white font-semibold cursor-pointer">
         <Link href="/about">About</Link>
 
         <li>Github</li>
